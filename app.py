@@ -59,8 +59,6 @@ try:
 except:
     logging.warning("not connected to mongodb")
 
-
-
 # using SQLite3 for heroku deployment
 
 conn = sqlite3.connect("webscraping.db")
@@ -84,7 +82,6 @@ print("this is the data inside the table scraping1: ",cur.fetchone())
 
 conn.commit()
 conn.close()
-
 
 
 ############## db SETUP END ##############
